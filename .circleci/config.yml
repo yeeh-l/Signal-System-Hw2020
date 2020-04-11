@@ -1,0 +1,19 @@
+
+Exercises
+Before you begin these exercises, you should download the code for this book, following the instructions in Section 0.2.
+
+Solutions to these exercises are in chap01soln.ipynb.
+
+Exercise 1
+
+If you have Jupyter, load chap01.ipynb, read through it, and run the examples. You can also view this notebook at http://tinyurl.com/thinkdsp01.
+Exercise 2
+
+Go to http://freesound.org and download a sound sample that includes music, speech, or other sounds that have a well-defined pitch. Select a roughly half-second segment where the pitch is constant. Compute and plot the spectrum of the segment you selected. What connection can you make between the timbre of the sound and the harmonic structure you see in the spectrum?
+Use high_pass, low_pass, and band_stop to filter out some of the harmonics. Then convert the spectrum back to a wave and listen to it. How does the sound relate to the changes you made in the spectrum?
+Exercise 3
+
+Synthesize a compound signal by creating SinSignal and CosSignal objects and adding them up. Evaluate the signal to get a Wave, and listen to it. Compute its Spectrum and plot it. What happens if you add frequency components that are not multiples of the fundamental?
+Exercise 4
+
+Write a function called stretch that takes a Wave and a stretch factor and speeds up or slows down the wave by modifying ts and framerate. Hint: it should only take two lines of code.
